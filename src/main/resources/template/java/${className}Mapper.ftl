@@ -1,8 +1,8 @@
 <#assign className=table.className/>
 <#assign classNameLower = table.classNameFirstLower/>
 ${gg.setOverride(false)}<#t/>
-${gg.setOutputFile(javaPath+separator+"dao"+separator+pageModuleName+separator+className+"Mapper.java")}<#t/>
-package ${javaPackage}.dao.${pageModuleName};
+${gg.setOutputFile(javaPath+separator+"mapper"+separator+pageModuleName+separator+className+"Mapper.java")}<#t/>
+package ${javaPackage}.mapper.${pageModuleName};
 
 /**
 * @ClassName: ${className}Mapper

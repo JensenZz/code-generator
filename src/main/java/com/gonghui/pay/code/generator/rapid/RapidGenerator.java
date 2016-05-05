@@ -47,17 +47,17 @@ public class RapidGenerator {
     public void initPackage(String javaPackage) {
         if (System.getProperty("os.name").equals("Mac OS X")) {
             String packPath = javaPackage.replaceAll("\\.", "/");
-            String reallyPath = "src/main/java/" + packPath;
+            String reallyPath = "src/main/java/" + packPath + "/dao";
             GeneratorProperties.setProperty(RapidGenerator.JAVA_PATH, reallyPath);
             GeneratorProperties.setProperty("javaPackage", javaPackage);
-            String myBatis = "src/main/resources/mapper";
+            String myBatis = "src/main/resources/"+packPath+"/mappers";
             GeneratorProperties.setProperty(RapidGenerator.MYBATIS_XML_PATH, myBatis);
         } else {
             String packPath = javaPackage.replaceAll("\\.", "\\\\");
-            String reallyPath = "\\src\\main\\java\\" + packPath;
+            String reallyPath = "\\src\\main\\java\\" + packPath+"\\dao";
             GeneratorProperties.setProperty(RapidGenerator.JAVA_PATH, reallyPath);
             GeneratorProperties.setProperty("javaPackage", javaPackage);
-            String myBatis = "\\src\\main\\resources\\mapper";
+            String myBatis = "\\src\\main\\resources\\"+packPath+"\\mappers";
             GeneratorProperties.setProperty(RapidGenerator.MYBATIS_XML_PATH, myBatis);
         }
     }

@@ -8,8 +8,8 @@ ${gg.setOutputFile(mybatisXMLPath+separator+pageModuleName+separator+className+"
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="${javaPackage}.dao.${pageModuleName}.${className}Mapper">
-    <resultMap id="fieldMapper" type="${javaPackage}.model.${pageModuleName}.${className}">
+<mapper namespace="${javaPackage}.mapper.${pageModuleName}.${className}Mapper">
+    <resultMap id="fieldMapper" type="${javaPackage}.domain.${pageModuleName}.${className}">
 	<#list table.pkColumns as pk>
 		<id property="${pk.columnNameFirstLower}" column="${(pk.sqlName)?upper_case}" /><!--${(pk.remarks)!''}-->
 	</#list>

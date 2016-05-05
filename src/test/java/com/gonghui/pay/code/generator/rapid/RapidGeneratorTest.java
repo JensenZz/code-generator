@@ -31,9 +31,9 @@ public class RapidGeneratorTest {
 
         rapidGenerator.initDbConfig(dbConfig);
         //输出路径
-        rapidGenerator.initOutRootPathConfig("/Users/JensenZz/Documents/log");
+        rapidGenerator.initOutRootPathConfig("/Users/JensenZz/Documents/jiedaibao/trunk/umg-dao");
         //项目名
-        rapidGenerator.initPackage("com.jiedaibao.umg.dao");
+        rapidGenerator.initPackage("com.jiedaibao.umg");
         //模块名  可随意
         rapidGenerator.initModelName("bankcard");
         //表名
