@@ -31,11 +31,12 @@ public class RapidGeneratorTest {
 
         rapidGenerator.initDbConfig(dbConfig);
         //输出路径
-        rapidGenerator.initOutRootPathConfig("/Users/JensenZz/Documents/jiedaibao/trunk/umg-dao");
+        rapidGenerator.initOutRootPathConfig("/Users/JensenZz/Documents/jiedaibao/umg/trunk/umg-dao");
+        rapidGenerator.initOutRootPathConfig("/Users/JensenZz/Documents/log");
         //项目名
-        rapidGenerator.initPackage("com.jiedaibao.umg");
+        rapidGenerator.initPackage("com.jiedaibao.umg.dao");
         //模块名  可随意
-        rapidGenerator.initModelName("bankcard");
+        rapidGenerator.initModelName("user");
         //表名
         rapidGenerator.generatorOneTable("UMG_BANK");
         rapidGenerator.generatorOneTable("UMG_USR_BCARD");

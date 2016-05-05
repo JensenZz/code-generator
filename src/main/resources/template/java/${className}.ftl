@@ -2,11 +2,8 @@
 <#assign classNameLower = table.classNameFirstLower/>
 ${gg.setOverride(true)}<#t/>
 ${gg.setOutputFile(javaPath+separator+"domain"+separator+pageModuleName+separator+className+".java")}<#t/>
-/**
-*@Author: ${author}
-*@Date: ${createTime}
-*/
-package ${javaPackage}.model.${pageModuleName};
+
+package ${javaPackage}.domain.${pageModuleName};
 
 /**
 * @ClassName: ${className}
