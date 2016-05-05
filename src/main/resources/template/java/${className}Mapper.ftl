@@ -3,8 +3,6 @@
 ${gg.setOverride(false)}<#t/>
 ${gg.setOutputFile(javaPath+separator+"dao"+separator+pageModuleName+separator+className+"Mapper.java")}<#t/>
 package ${javaPackage}.dao.${pageModuleName};
-import ${javaPackage}.model.${pageModuleName}.${className};
-import com.gonghui.pay.common.persistent.BaseMapper;
 
 /**
 * @ClassName: ${className}Mapper

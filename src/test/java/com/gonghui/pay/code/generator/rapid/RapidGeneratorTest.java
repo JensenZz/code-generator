@@ -35,7 +35,7 @@ public class RapidGeneratorTest {
         //项目名
         rapidGenerator.initPackage("com.jiedaibao.umg.dao");
         //模块名  可随意
-        rapidGenerator.initModelName("bank");
+        rapidGenerator.initModelName("bankcard");
         //表名
         rapidGenerator.generatorOneTable("UMG_BANK");
         rapidGenerator.generatorOneTable("UMG_USR_BCARD");
