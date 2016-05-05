@@ -1,7 +1,7 @@
 <#assign className=table.className/>
 <#assign classNameLower = table.classNameFirstLower/>
 ${gg.setOverride(true)}<#t/>
-${gg.setOutputFile(javaPath+separator+"model"+separator+pageModuleName+separator+className+".java")}<#t/>
+${gg.setOutputFile(javaPath+separator+"domain"+separator+pageModuleName+separator+className+".java")}<#t/>
 /**
 *@Author: ${author}
 *@Date: ${createTime}
@@ -18,7 +18,9 @@ public class ${className}{
 	
 	<#list table.columns as column>
 	<#if column.remarks??>
-	//${column.remarks}
+	/**
+	 *${column.remarks}
+	 */
 	</#if>
 	private ${column.simpleJavaType} ${column.columnNameLower};
 	</#list>

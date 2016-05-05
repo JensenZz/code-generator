@@ -33,11 +33,12 @@ public class RapidGeneratorTest {
         //输出路径
         rapidGenerator.initOutRootPathConfig("/Users/JensenZz/Documents/log");
         //项目名
-        rapidGenerator.initPackage("com.jiedaibao");
+        rapidGenerator.initPackage("com.jiedaibao.umg.dao");
         //模块名  可随意
-        rapidGenerator.initModelName("umg");
+        rapidGenerator.initModelName("bank");
         //表名
-        rapidGenerator.generatorOneTable("local_user");
+        rapidGenerator.generatorOneTable("UMG_BANK");
+        rapidGenerator.generatorOneTable("UMG_USR_BCARD");
 
     }
 
